@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('main-content')
-    <div class="d-flex flex-wrap justify-content-center">
+    <div class="container d-flex flex-wrap justify-content-center">
         @forelse ($movies as $movie)
             @include('partials.movieCard', ['movie' => $movie])
         @empty
